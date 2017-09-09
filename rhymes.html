@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site built using Amiko font, Bootstrap, and Font Awesome-->
+  <title>Rhyme Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="col-md-1">
+    <h1><a href="http://philipkiely.com" id="back-button" class="well black-text text-center"><i id="back-button" class="fa fa-home"></i></a></h1>
+  </div>
+<div class="topper col-md-10">
+  <h1 class="text-center"><b>Shakespearean Rhymes</b></h1>
+</div>
+<div class="col-md-12">
+  <h2></h2>
+</div>
+<div class="col-md-10 col-md-offset-1 well">
+<div class="col-md-3">
+<h3>Enter a word</h3>
+<form>
+  <div class="form-group col-md-8">
+    <input type="text" class="form-control" value="day">
+  </div>
+  <button type="submit" id="rhyme" class="btn btn-default">Rhyme</button>
+</form>
+</div>
+<div class="col-md-9">
+  <h1 id="output"></h1>
+</div>
+</div>
+<div class="col-md-10 col-md-offset-1 well">
+<h3>About Shakespearean Rhymes</h3>
+<p>This program, when given one of 1,032 unique words, returns a line of iambic pentameter that rhymes with the given word. The program uses all 152 of Shakespeare's complete sonnets to generate these lines, as sonnets have a strict meter and rhyme scheme. The sonnets, as part of the public domain, are available <a href="https://www.opensourceshakespeare.org/views/sonnets/sonnets.php" class="black-text">here</a>.</p>
+<p>The program has two arrays that hold the data: "sonnets" and "end_rhymes". The "sonnets" array holds each sonnet as an array of fourteen strings, while the "end_rhymes" array holds the last word of each line of each sonnet. First, the program takes the given word and runs it through the "end_rhymes" array to find the index of the word. This is the same index as the corresponding sonnet in the "sonnets" array. From there, the program uses a series of loops to determine the correct line to rhyme with, given the sonnet's strictly defined rhyme scheme. It proudly displays this rhyming line.</p>
+</div>
+<script src="rhymes.js"></script>
+</body>
