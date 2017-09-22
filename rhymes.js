@@ -2346,23 +2346,66 @@ function rhymedline(word){
         return "No rhyming line found"
       }
 }
-/*
-$(document).ready(function(){
-    $('#rhyme').click(function(){
-  	$('#output').text(rhymedline($('#word').val()))
-    });
-  });*/
-//function rhyme(){
-//var word = document.getElementsByName("word");
-//console.log(document.getElementsByName("word"));
-//var rhyme = rhymedline(word);
-//document.getElementsByName("output").innerHTML = "test";
-//}
-var form = document.querySelector("form");
-  form.addEventListener("submit", function(event) {
-    var word = form.elements[0].value;
-    console.log(rhymedline(word));
-    var output = document.querySelector("#output");
+
+function seven_couplets_rhymer(seeds){
+  var lines = []
+  for (var i=0; i<7; i++) {
+    seed = seeds[i]
+    lines.push(rhymedline(seed))
+  }
+  return lines
+}//seven_couplets_rhymer
+
+
+function seven_couplets(){
+  //returns 7 rhyming couplets
+  var seeds = []
+  for(var i=0; i<7; i++){
+    end_words_options = all_end_words[(Math.floor(Math.random()*all_end_words.length))]
+    seeds.push(end_words_options[(Math.floor(Math.random()*end_words_options.length))]) //end word not random word from line
+}
+firstlines = seven_couplets_rhymer(seeds)
+var new_seeds = []
+firstlines.forEach(function(line){
+    var split = line.split([" "])
+      new_seeds.push(split[split.length - 1])
+  });
+secondlines = seven_couplets_rhymer(new_seeds)
+return [firstlines, secondlines]
+}//seven_couplets
+
+
+function make_poem(){  //constructs poem as array of strings
+  var lines = seven_couplets()
+  var firstlines = lines[0]
+  var secondlines = lines[1]
+  var poem = []
+  for (var i=0; i<6; i+=2){
+    poem.push(firstlines[i])
+    poem.push(firstlines[i+1])
+    poem.push(secondlines[i])
+    poem.push(secondlines[i+1])
+  }
+  poem.push(firstlines[6])
+  poem.push(secondlines[6])
+  return poem
+}//make_poem
+
+var rhymeform = document.querySelector("#rhymeform");
+  rhymeform.addEventListener("submit", function(event) {
+    var word = rhymeform.elements[0].value;
+    var output = document.querySelector("#outputrhyme");
     output.textContent = rhymedline(word);
     event.preventDefault();
   });
+var poemform = document.querySelector("#poemform");
+  poemform.addEventListener("submit", function(event) {
+    var sonnet = make_poem();
+    var output = document.querySelector("#outputpoem");
+    output.textContent = "";
+    for(i=0; i<14; i++){
+    output.append(document.createElement("p").textContent = sonnet[i]);
+    output.append(document.createElement("br"));
+  }
+    event.preventDefault();
+    });
