@@ -46,6 +46,20 @@
 </div>
 </div>
 <div class="col-md-10 col-md-offset-1 well col-xs-12">
+<div class="col-md-3 col-xs-12">
+<h3>Create a Net</h3>
+<form id="netform">
+  <input type="number" class="form-control" value="1">
+  <button type="submit" id="net" class="btn btn-default">Generate</button>
+</form>
+</div>
+<div class="col-md-9 col-xs-12">
+  <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <p id="outputnet"></p>
+</div>
+</div>
+</div>
+<div class="col-md-10 col-md-offset-1 well col-xs-12">
 <h3>About Shakespearean Rhymes</h3>
 <h4>Rhyme a word</h4>
 <p>This program, when given one of over 1,000 unique words, returns a line of iambic pentameter that rhymes with the given word. The program uses all 152 of Shakespeare's complete sonnets to generate these lines, as sonnets have a strict meter and rhyme scheme. The sonnets, as part of the public domain, are available at <a href="https://www.opensourceshakespeare.org/views/sonnets/sonnets.php" class="black-text">opensourceshakespeare.org</a>.</p>
@@ -53,6 +67,8 @@
 <h4>Create a sonnet</h4>
 <p>Using the same data as the word-rhyming program, this program generates an entire sonnet by combining existing lines of Shakespeare's poetry. Using the rhyming line program, it creates poems where the lines that rhyme are not necessarily from the same poem.</p>
 <p>The program takes seven random words from the "end_rhymes" array and matches rhyming lines. It then matches the last word of each of these lines to generate a second list of seven lines. It combines these lists into the structure of a sonnet to complete the poem.</p>
+<h4>Create a "net"</h4>
+<p>Enter a number (sonnets numbered in accordance with Folger Shakespeare's Sonnets and Poems) to create a randomized "net" of a few words (usually between 3 to 7) from that sonnet.</p>
 </div>
 <div class="col-md-10 col-md-offset-1 well col-xs-12">
 <h3>Recognized words for end rhyme</h3>

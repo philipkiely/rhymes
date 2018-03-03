@@ -1877,6 +1877,19 @@ var all_sonnets = [
 "Hence, thou suborn'd informer! a true soul",
 "When most impeach'd stands least in thy control"],
 
+["O thou, my lovely boy, who in thy power",
+"Dost hold Time's fickle glass, his sickle hour",
+"Who hast by waning grown, and therein show'st",
+"Thy lover's withering as thy sweet self grow'st",
+"If Nature, sovereign mistress over wrack",
+"As thou goest onwards still will pluck thee back",
+"She keeps thee to this purpose, that her skill",
+"May Time disgrace, and wretched minutes kill",
+"Yet fear her, O thou minion of her pleasure",
+"She may detain, but not still keep, her treasure",
+"Her audit, though delayed, answered must be",
+"And her quietus is to render thee"],
+
 ["In the old age black was not counted fair",
 "Or if it were, it bore not beauty's name",
 "But now is black beauty's successive heir",
@@ -2298,53 +2311,65 @@ var all_sonnets = [
 "Love's fire heats water, water cools not love"]
 ]
 
-var all_end_words = [['increase', 'die', 'decease', 'memory', 'eyes', 'fuel', 'lies', 'cruel', 'ornament', 'spring', 'content', 'niggarding', 'be', 'thee'], ['brow', 'field', 'now', 'held', 'lies', 'days', 'eyes', 'praise', 'use', 'mine', 'excuse', 'thine', 'old', 'cold'], ['viewest', 'another', 'renewest', 'mother', 'womb', 'husbandry', 'tomb', 'posterity', 'thee', 'prime', 'see', 'time', 'be', 'thee'], ['spend', 'legacy', 'lend', 'free', 'abuse', 'give', 'use', 'live', 'alone', 'deceive', 'gone', 'leave', 'thee', 'be'], ['frame', 'dwell', 'same', 'excel', 'on', 'there', 'gone', 'where', 'left', 'glass', 'bereft', 'was', 'meet', 'sweet'], ['deface', "distill'd", 'place', "self-kill'd", 'usury', 'loan', 'thee', 'one', 'art', 'thee', 'depart', 'posterity', 'fair', 'heir'], ['light', 'eye', 'sight', 'majesty', 'hill', 'age', 'still', 'pilgrimage', 'car', 'day', 'are', 'way', 'noon', 'son'], ['sadly', 'joy', 'gladly', 'annoy', 'sounds', 'ear', 'confounds', 'bear', 'another', 'ordering', 'mother', 'sing', 'one', 'none.'], ['eye', 'life', 'die', 'wife', 'weep', 'behind', 'keep', 'mind', 'spend', 'it', 'end', 'it', 'sits', 'commits'], ['any', 'unprovident', 'many', 'evident', 'hate', 'conspire', 'ruinate', 'desire', 'mind', 'love', 'kind', 'prove', 'me', 'thee'], ['growest', 'departest', 'bestowest', 'convertest', 'increase', 'decay', 'cease', 'away', 'store', 'perish', 'more', 'cherish', 'thereby', 'die'], ['time', 'night', 'prime', 'white', 'leaves', 'herd', 'sheaves', 'beard', 'make', 'go', 'forsake', 'grow', 'defence', 'hence'], ['are', 'live', 'prepare', 'give', 'lease', 'were', 'decease', 'bear', 'decay', 'uphold', 'day', 'cold', 'know', 'so'], ['pluck', 'astronomy', 'luck', 'quality', 'tell', 'wind', 'well', 'find', 'derive', 'art', 'thrive', 'convert', 'prognosticate', 'date'], ['grows', 'moment', 'shows', 'comment', 'increase', 'sky', 'decrease', 'memory', 'stay', 'sight', 'Decay', 'night', 'you', 'new'], ['way', 'Time', 'decay', 'rhyme', 'hours', 'unset', 'flowers', 'counterfeit', 'repair', 'pen', 'fair', 'men', 'still', 'skill'], ['come', 'deserts', 'tomb', 'parts', 'eyes', 'graces', 'lies', 'faces', 'age', 'tongue', 'rage', 'song', 'time', 'rhyme'], ['day', 'temperate', 'May', 'date', 'shines', "dimm'd", 'declines', "untrimm'd", 'fade', 'owest', 'shade', 'growest', 'see', 'thee'], ['paws', 'brood', 'jaws', 'blood', 'fleets', 'Time', 'sweets', 'crime', 'brow', 'pen', 'allow', 'men', 'wrong', 'young'], ['painted', 'passion', 'acquainted', 'fashion', 'rolling', 'gazeth', 'controlling', 'amazeth', 'created', 'a-doting', 'defeated', 'nothing', 'pleasure', 'treasure'], ['Muse', 'verse', 'use', 'rehearse', 'compare', 'gems', 'rare', 'hems', 'write', 'fair', 'bright', 'air', 'well', 'sell'], ['old', 'date', 'behold', 'expiate', 'thee', 'heart', 'me', 'art', 'wary', 'will', 'chary', 'ill', 'slain', 'again'], ['stage', 'part', 'rage', 'heart', 'say', 'rite', 'decay', 'might', 'eloquence', 'breast', 'recompense', "express'd", 'writ', 'wit'], ["stell'd", 'heart', 'held', 'art', 'skill', 'lies', 'still', 'eyes', 'done', 'me', 'sun', 'thee', 'art', 'heart'], ['stars', 'boast', 'bars', 'most', 'spread', 'eye', 'buried', 'die', 'fight', "foil'd", 'quite', "toil'd", 'beloved', 'removed'], ['vassalage', 'knit', 'embassage', 'wit', 'mine', 'it', 'thine', 'it', 'moving', 'aspect', 'loving', 'respect', 'thee', 'me'], ['bed', 'tired', 'head', 'expired', 'abide', 'thee', 'wide', 'see', 'sight', 'view', 'night', 'new', 'mind', 'find'], ['plight', 'rest', 'night', "oppress'd", 'reign', 'me', 'complain', 'thee', 'bright', 'heaven', 'night', 'even', 'longer', 'stronger'], ['eyes', 'state', 'cries', 'fate', 'hope', "possess'd", 'scope', 'least', 'despising', 'state', 'arising', 'gate', 'brings', 'kings'], ['thought', 'past', 'sought', 'waste', 'flow', 'night', 'woe', 'sight', 'foregone', "o'er", 'moan', 'before', 'friend', 'end'], ['hearts', 'dead', 'parts', 'buried', 'tear', 'eye', 'appear', 'lie', 'live', 'gone', 'give', 'alone', 'thee', 'me'], ['day', 'cover', 're-survey', 'lover', 'time', 'pen', 'rhyme', 'men', 'thought', 'age', 'brought', 'equipage', 'prove', 'love.'], ['seen', 'eye', 'green', 'alchemy', 'ride', 'face', 'hide', 'disgrace', 'shine', 'brow', 'mine', 'now', 'disdaineth', 'staineth'], ['day', 'cloak', 'way', 'smoke', 'break', 'face', 'speak', 'disgrace', 'grief', 'loss', 'relief', 'cross', 'sheds', 'deeds'], ['done', 'mud', 'sun', 'bud', 'this', 'compare', 'amiss', 'are', 'sense', 'advocate', 'commence', 'hate', 'be', 'me'], ['twain', 'one', 'remain', 'alone', 'respect', 'spite', 'effect', 'delight', 'thee', 'shame', 'me', 'name', 'sort', 'report'], ['delight', 'youth', 'spite', 'truth', 'wit', 'more', 'sit', 'store', 'despised', 'give', 'sufficed', 'live', 'thee', 'me'], ['invent', 'verse', 'excellent', 'rehearse', 'me', 'sight', 'thee', 'light', 'worth', 'invocate', 'forth', 'date', 'days', 'praise'], ['sing', 'me', 'bring', 'thee', 'live', 'one', 'give', 'alone', 'prove', 'leave', 'love', 'deceive', 'twain', 'remain'], ['all', 'before', 'call', 'more', 'receivest', 'usest', 'deceivest', 'refusest', 'thief', 'poverty', 'grief', 'injury', 'shows', 'foes'], ['commits', 'heart', 'befits', 'art', 'won', 'assailed', 'son', 'prevailed', 'forbear', 'youth', 'there', 'truth', 'thee', 'me'], ['grief', 'dearly', 'chief', 'nearly', 'ye', 'her', 'me', 'her', 'gain', 'loss', 'twain', 'cross', 'one', 'alone'], ['see', 'unrespected', 'thee', 'directed', 'bright', 'show', 'light', 'so', 'made', 'day', 'shade', 'stay', 'thee', 'me'], ['thought', 'way', 'brought', 'stay', 'stand', 'thee', 'land', 'be', 'thought', 'gone', 'wrought', 'moan', 'slow', 'woe'], ['fire', 'abide', 'desire', 'slide', 'gone', 'thee', 'alone', 'melancholy', 'recured', 'thee', 'assured', 'me', 'glad', 'sad'], ['war', 'sight', 'bar', 'right', 'lie', 'eyes', 'deny', 'lies', 'impanneled', 'heart', 'determined', 'part', 'part', 'heart'], ['took', 'other', 'look', 'smother', 'feast', 'heart', 'guest', 'part', 'love', 'me', 'move', 'thee', 'sight', 'delight'], ['way', 'thrust', 'stay', 'trust', 'are', 'grief', 'care', 'thief', 'chest', 'art', 'breast', 'part', 'fear', 'dear'], ['come', 'defects', 'sum', 'respects', 'pass', 'eye', 'was', 'gravity', 'here', 'desert', 'uprear', 'part', 'laws', 'cause'], ['way', 'end', 'say', 'friend', 'woe', 'me', 'know', 'thee', 'on', 'hide', 'groan', 'side', 'mind', 'behind'], ['offence', 'speed', 'thence', 'need', 'find', 'slow', 'wind', 'know', 'pace', 'made', 'race', 'jade', 'wilful-slow', 'go'], ['key', 'treasure', 'survey', 'pleasure', 'rare', 'set', 'are', 'carcanet', 'chest', 'hide', 'blest', 'pride', 'scope', 'hope'], ['made', 'tend', 'shade', 'lend', 'counterfeit', 'you', 'set', 'new', 'year', 'show', 'appear', 'know', 'part', 'heart'], ['seem', 'give', 'deem', 'live', 'dye', 'roses', 'wantonly', 'discloses', 'show', 'fade', 'so', 'made', 'youth', 'truth'], ['monuments', 'rhyme', 'contents', 'time', 'overturn', 'masonry', 'burn', 'memory', 'enmity', 'room', 'posterity', 'doom', 'arise', 'eyes'], ['said', 'appetite', "allay'd", 'might', 'fill', 'fullness', 'kill', 'dullness', 'be', 'new', 'see', 'view', 'care', 'rare'], ['tend', 'desire', 'spend', 'require', 'hour', 'you', 'sour', 'adieu', 'thought', 'suppose', 'nought', 'those', 'will', 'ill'], ['slave', 'pleasure', 'crave', 'leisure', 'beck', 'liberty', 'cheque', 'injury', 'strong', 'time', 'belong', 'crime', 'hell', 'well'], ['is', 'beguiled', 'amiss', 'child', 'look', 'sun', 'book', 'done', 'say', 'frame', 'they', 'same', 'days', 'praise'], ['shore', 'end', 'before', 'contend', 'light', "crown'd", 'fight', 'confound', 'youth', 'brow', 'truth', 'mow', 'stand', 'hand'], ['open', 'night', 'broken', 'sight', 'thee', 'pry', 'me', 'jealousy', 'great', 'awake', 'defeat', 'sake', 'elsewhere', 'near'], ['eye', 'part', 'remedy', 'heart', 'mine', 'account', 'define', 'surmount', 'indeed', 'antiquity', 'read', 'iniquity', 'praise', 'days'], ['now', "o'er-worn", 'brow', 'morn', 'night', 'king', 'sight', 'spring', 'fortify', 'knife', 'memory', 'life', 'seen', 'green'], ['defaced', 'age', 'down-razed', 'rage', 'gain', 'shore', 'main', 'store', 'state', 'decay', 'ruminate', 'away', 'choose', 'lose'], ['sea', 'power', 'plea', 'flower', 'out', 'days', 'stout', 'decays', 'alack', 'hid', 'back', 'forbid', 'might', 'bright'], ['cry', 'born', 'jollity', 'forsworn', 'misplaced', 'strumpeted', 'disgraced', 'disabled', 'authority', 'skill', 'simplicity', 'ill', 'gone', 'alone'], ['live', 'impiety', 'achieve', 'society', 'cheek', 'hue', 'seek', 'true', 'is', 'veins', 'his', 'gains', 'had', 'bad'], ['outworn', 'now', 'born', 'brow', 'dead', 'away', 'head', 'gay', 'seen', 'true', 'green', 'new', 'store', 'yore'], ['view', 'mend', 'due', 'commend', "crown'd", 'own', 'confound', 'shown', 'mind', 'deeds', 'kind', 'weeds', 'show', 'grow'], ['defect', 'fair', 'suspect', 'air', 'approve', 'time', 'love', 'prime', 'days', 'charged', 'praise', 'enlarged', 'show', 'owe'], ['dead', 'bell', 'fled', 'dwell', 'not', 'so', 'forgot', 'woe', 'verse', 'clay', 'rehearse', 'decay', 'moan', 'gone'], ['recite', 'love', 'quite', 'prove', 'lie', 'desert', 'deceased', 'impart', 'this', 'untrue', 'is', 'you', 'forth', 'worth'], ['behold', 'hang', 'cold', 'sang', 'day', 'west', 'away', 'rest', 'fire', 'lie', 'expire', 'by', 'strong', 'long'], ['arrest', 'away', 'interest', 'stay', 'review', 'thee', 'due', 'me', 'life', 'dead', 'knife', 'remembered', 'contains', 'remains'], ['life', 'ground', 'strife', 'found', 'anon', 'treasure', 'alone', 'pleasure', 'sight', 'look', 'delight', 'took', 'day', 'away'], ['pride', 'change', 'aside', 'strange', 'same', 'weed', 'name', 'proceed', 'you', 'argument', 'new', 'spent', 'old', 'told'], ['wear', 'waste', 'bear', 'taste', 'show', 'memory', 'know', 'eternity', 'contain', 'find', 'brain', 'mind', 'look', 'book'], ['Muse', 'verse', 'use', 'disperse', 'sing', 'fly', 'wing', 'majesty', 'compile', 'thee', 'style', 'be', 'advance', 'ignorance'], ['aid', 'grace', "decay'd", 'place', 'argument', 'pen', 'invent', 'again', 'word', 'give', 'afford', 'live', 'say', 'pay'], ['write', 'name', 'might', 'fame', 'is', 'bear', 'his', 'appear', 'afloat', 'ride', 'boat', 'pride', 'away', 'decay'], ['make', 'rotten', 'take', 'forgotten', 'have', 'die', 'grave', 'lie', 'verse', "o'er-read", 'rehearse', 'dead', 'pen', 'men'], ['Muse', "o'erlook", 'use', 'book', 'hue', 'praise', 'anew', 'days', 'devised', 'lend', 'sympathized', 'friend', 'used', 'abused'], ['need', 'set', 'exceed', 'debt', 'report', 'show', 'short', 'grow', 'impute', 'dumb', 'mute', 'tomb', 'eyes', 'devise'], ['more', 'you', 'store', 'grew', 'dwell', 'glory', 'tell', 'story', 'writ', 'clear', 'wit', 'where', 'curse', 'worse'], ['still', 'compiled', 'quill', 'filed', 'words', "'Amen", 'affords', 'pen', 'true', 'more', 'you', 'before', 'respect', 'effect'], ['verse', 'you', 'inhearse', 'grew', 'write', 'dead', 'night', 'astonished', 'ghost', 'intelligence', 'boast', 'thence', 'line', 'mine'], ['possessing', 'estimate', 'releasing', 'determinate', 'granting', 'deserving', 'wanting', 'swerving', 'knowing', 'mistaking', 'growing', 'making', 'flatter', 'matter'], ['light', 'scorn', 'fight', 'forsworn', 'acquainted', 'story', 'attainted', 'glory', 'too', 'thee', 'do', 'me', 'belong', 'wrong'], ['fault', 'offence', 'halt', 'defence', 'ill', 'change', 'will', 'strange', 'tongue', 'dwell', 'wrong', 'tell', 'debate', 'hate'], ['now', 'cross', 'bow', 'after-loss', 'sorrow', 'woe', 'morrow', 'overthrow', 'last', 'spite', 'taste', 'might', 'woe', 'so'], ['skill', 'force', 'ill', 'horse', 'pleasure', 'rest', 'measure', 'best', 'me', 'cost', 'be', 'boast', 'take', 'make'], ['away', 'mine', 'stay', 'thine', 'wrongs', 'end', 'belongs', 'depend', 'mind', 'lie', 'find', 'die', 'blot', 'not'], ['true', 'face', 'new', 'place', 'eye', 'change', 'history', 'strange', 'decree', 'dwell', 'be', 'tell', 'grow', 'show'], ['none', 'show', 'stone', 'slow', 'graces', 'expense', 'faces', 'excellence', 'sweet', 'die', 'meet', 'dignity', 'deeds', 'weeds'], ['shame', 'rose', 'name', 'enclose', 'days', 'sport', 'praise', 'report', 'got', 'thee', 'blot', 'see', 'privilege', 'edge'], ['wantonness', 'sport', 'less', 'resort', 'queen', "esteem'd", 'seen', "deem'd", 'betray', 'translate', 'away', 'state', 'sort', 'report'], ['been', 'year', 'seen', 'where', 'time', 'increase', 'prime', 'decease', 'me', 'fruit', 'thee', 'mute', 'cheer', 'near'], ['spring', 'trim', 'thing', 'him', 'smell', 'hue', 'tell', 'grew', 'white', 'rose', 'delight', 'those', 'away', 'play'], ['chide', 'smells', 'pride', 'dwells', 'dyed', 'hand', 'hair', 'stand', 'despair', 'both', 'breath', 'growth', 'death', 'see', '1'], ['long', 'might', 'song', 'light', 'redeem', 'spent', 'esteem', 'argument', 'survey', 'there', 'decay', 'where', 'life', 'knife'], ['amends', 'dyed', 'depends', 'dignified', 'say', "fix'd", 'lay', "intermix'd", 'dumb', 'thee', 'tomb', 'be', 'how', 'now'], ['seeming', 'appear', 'esteeming', 'where', 'spring', 'lays', 'sing', 'days', 'now', 'night', 'bough', 'delight', 'tongue', 'song'], ['forth', 'pride', 'worth', 'beside', 'write', 'face', 'quite', 'disgrace', 'mend', 'well', 'tend', 'tell', 'sit', 'it'], ['old', 'eyed', 'cold', 'pride', "turn'd", 'seen', "burn'd", 'green', 'dial-hand', 'perceived', 'stand', 'deceived', 'unbred', 'dead'], ['idolatry', 'show', 'be', 'so', 'kind', 'excellence', 'confined', 'difference', 'argument', 'words', 'spent', 'affords', 'alone', 'one'], ['time', 'wights', 'rhyme', 'knights', 'best', 'brow', "express'd", 'now', 'prophecies', 'prefiguring', 'eyes', 'sing', 'days', 'praise'], ['soul', 'come', 'control', 'doom', 'endured', 'presage', 'assured', 'age', 'time', 'subscribes', 'rhyme', 'tribes', 'monument', 'spent'], ['character', 'spirit', 'register', 'merit', 'divine', 'same', 'thine', 'name', 'case', 'age', 'place', 'page', 'bred', 'dead'], ['heart', 'qualify', 'depart', 'lie', 'ranged', 'again', 'exchanged', 'stain', "reign'd", 'blood', "stain'd", 'good', 'call', 'all'], ['there', 'view', 'dear', 'new', 'truth', 'above', 'youth', 'love', 'end', 'grind', 'friend', 'confined', 'best', 'breast'], ['chide', 'deeds', 'provide', 'breeds', 'brand', 'subdued', 'hand', "renew'd", 'drink', 'infection', 'think', 'correction', 'ye', 'me'], ['fill', 'brow', 'ill', 'allow', 'strive', 'tongue', 'alive', 'wrong', 'care', 'sense', 'are', 'dispense', 'bred', 'dead'], ['mind', 'about', 'blind', 'out', 'heart', 'latch', 'part', 'catch', 'sight', 'creature', 'night', 'feature', 'you', 'untrue'], ['you', 'flattery', 'true', 'alchemy', 'indigest', 'resemble', 'best', 'assemble', 'seeing', 'up', "'greeing", 'cup', 'sin', 'begin'], ['lie', 'dearer', 'why', 'clearer', 'accidents', 'kings', 'intents', 'things', 'tyranny', 'best', 'incertainty', 'rest', 'so', 'grow'], ['minds', 'love', 'finds', 'remove', 'mark', 'shaken', 'bark', 'taken', 'cheeks', 'come', 'weeks', 'doom', 'proved', 'loved'], ['all', 'repay', 'call', 'day', 'minds', 'right', 'winds', 'sight', 'down', 'accumulate', 'frown', 'hate', 'prove', 'love'], ['keen', 'urge', 'unseen', 'purge', 'sweetness', 'feeding', 'meetness', 'needing', 'anticipate', 'assured', 'state', 'cured', 'true', 'you'], ['tears', 'within', 'fears', 'win', 'committed', 'never', 'fitted', 'fever', 'true', 'better', 'anew', 'greater', 'content', 'spent'], ['now', 'feel', 'bow', 'steel', 'shaken', 'time', 'taken', 'crime', "remember'd", 'hits', "tender'd", 'fits', 'fee', 'me'], ["esteem'd", 'being', "deem'd", 'seeing', 'eyes', 'blood', 'spies', 'good', 'level', 'own', 'bevel', 'shown', 'maintain', 'reign'], ['brain', 'memory', 'remain', 'eternity', 'heart', 'subsist', 'part', "miss'd", 'hold', 'score', 'bold', 'more', 'thee', 'me'], ['change', 'might', 'strange', 'sight', 'admire', 'old', 'desire', 'told', 'defy', 'past', 'lie', 'haste', 'be', 'thee'], ['state', "unfather'd", 'hate', "gather'd", 'accident', 'falls', 'discontent', 'calls', 'heretic', 'hours', 'politic', 'showers', 'time', 'crime'], ['canopy', 'honouring', 'eternity', 'ruining', 'favour', 'rent', 'savour', 'spent', 'heart', 'free', 'art', 'thee', 'soul', 'control'], ['fair', 'name', 'heir', 'shame', 'power', 'face', 'bower', 'disgrace', 'black', 'seem', 'lack', 'esteem', 'woe', 'so'], ["play'st", 'sounds', "sway'st", 'confounds', 'leap', 'hand', 'reap', 'stand', 'state', 'chips', 'gait', 'lips', 'this', 'kiss'], ['shame', 'lust', 'blame', 'trust', 'straight', 'had', 'bait', 'mad', 'so', 'extreme', 'woe', 'dream', 'well', 'hell'], ['sun', 'red', 'dun', 'head', 'white', 'cheeks', 'delight', 'reeks', 'know', 'sound', 'go', 'ground', 'rare', 'compare'], ['art', 'cruel', 'heart', 'jewel', 'behold', 'groan', 'bold', 'alone', 'swear', 'face', 'bear', 'place', 'deeds', 'proceeds'], ['me', 'disdain', 'be', 'pain', 'heaven', 'east', 'even', 'west', 'face', 'heart', 'grace', 'part', 'black', 'lack'], ['groan', 'me', 'alone', 'be', 'taken', "engross'd", 'forsaken', "cross'd", 'ward', 'bail', 'guard', 'gaol', 'thee', 'me'], ['thine', 'will', 'mine', 'still', 'free', 'kind', 'me', 'bind', 'take', 'use', 'sake', 'abuse', 'me', 'free'], ["'Will", 'overplus', 'still', 'thus', 'spacious', 'thine', 'gracious', 'shine', 'still', 'store', "'Will", 'more', 'kill', "'Will."], ['near', "'Will", 'there', 'fulfil', 'love', 'one', 'prove', 'none', 'untold', 'be', 'hold', 'thee', 'still', "'Will."], ['eyes', 'see', 'lies', 'be', 'looks', 'ride', 'hooks', 'tied', 'plot', 'place', 'not', 'face', 'erred', "transferr'd"], ['truth', 'lies', 'youth', 'subtleties', 'young', 'best', 'tongue', "suppress'd", 'unjust', 'old', 'trust', 'told', 'me', 'be'], ['wrong', 'heart', 'tongue', 'art', 'sight', 'aside', 'might', 'bide', 'knows', 'enemies', 'foes', 'injuries', 'slain', 'pain'], ['press', 'disdain', 'express', 'pain', 'were', 'so', 'near', 'know', 'mad', 'thee', 'bad', 'be', 'belied', 'wide'], ['eyes', 'note', 'despise', 'dote', 'delighted', 'prone', 'invited', 'alone', 'can', 'thee', 'man', 'be', 'gain', 'pain'], ['hate', 'loving', 'state', 'reproving', 'thine', 'ornaments', 'mine', 'rents', 'those', 'thee', 'grows', 'be', 'hide', 'denied'], ['catch', 'away', 'dispatch', 'stay', 'chase', 'bent', 'face', 'discontent', 'thee', 'behind', 'me', 'kind', "'Will", 'still'], ['despair', 'still', 'fair', 'ill', 'evil', 'side', 'devil', 'pride', 'fiend', 'tell', 'friend', 'hell', 'doubt', 'out'], ['make', 'hate', 'sake', 'state', 'come', 'sweet', 'doom', 'greet', 'end', 'day', 'fiend', 'away', 'threw', 'you.'], ['earth', 'array', 'dearth', 'gay', 'lease', 'spend', 'excess', 'end', 'loss', 'store', 'dross', 'more', 'men', 'then'], ['still', 'disease', 'ill', 'please', 'love', 'kept', 'approve', 'except', 'care', 'unrest', 'are', "express'd", 'bright', 'night'], ['head', 'sight', 'fled', 'aright', 'dote', 'so', 'denote', "'No", 'true', 'tears', 'view', 'clears', 'blind', 'find'], ['not', 'partake', 'forgot', 'sake', 'friend', 'upon', 'spend', 'moan', 'respect', 'despise', 'defect', 'eyes', 'mind', 'blind'], ['might', 'sway', 'sight', 'day', 'ill', 'deeds', 'skill', 'exceeds', 'more', 'hate', 'abhor', 'state', 'me', 'thee'], ['is', 'love', 'amiss', 'prove', 'betray', 'treason', 'may', 'reason', 'thee', 'pride', 'be', 'side', 'call', 'fall'], ['forsworn', 'swearing', 'torn', 'bearing', 'thee', 'most', 'thee', 'lost', 'kindness', 'constancy', 'blindness', 'see', 'perjured', 'lie'], ['asleep', 'found', 'steep', 'ground', 'Love', 'endure', 'prove', 'cure', 'new-fired', 'breast', 'desired', 'guest', 'lies', 'eyes'], ['asleep', 'brand', 'keep', 'hand', 'fire', "warm'd", 'desire', "disarm'd", 'by', 'perpetual', 'remedy', 'thrall', 'prove', 'love']];
+var all_end_words = [['increase', 'die', 'decease', 'memory', 'eyes', 'fuel', 'lies', 'cruel', 'ornament', 'spring', 'content', 'niggarding', 'be', 'thee'], ['brow', 'field', 'now', 'held', 'lies', 'days', 'eyes', 'praise', 'use', 'mine', 'excuse', 'thine', 'old', 'cold'], ['viewest', 'another', 'renewest', 'mother', 'womb', 'husbandry', 'tomb', 'posterity', 'thee', 'prime', 'see', 'time', 'be', 'thee'], ['spend', 'legacy', 'lend', 'free', 'abuse', 'give', 'use', 'live', 'alone', 'deceive', 'gone', 'leave', 'thee', 'be'], ['frame', 'dwell', 'same', 'excel', 'on', 'there', 'gone', 'where', 'left', 'glass', 'bereft', 'was', 'meet', 'sweet'], ['deface', "distill'd", 'place', "self-kill'd", 'usury', 'loan', 'thee', 'one', 'art', 'thee', 'depart', 'posterity', 'fair', 'heir'], ['light', 'eye', 'sight', 'majesty', 'hill', 'age', 'still', 'pilgrimage', 'car', 'day', 'are', 'way', 'noon', 'son'], ['sadly', 'joy', 'gladly', 'annoy', 'sounds', 'ear', 'confounds', 'bear', 'another', 'ordering', 'mother', 'sing', 'one', 'none.'], ['eye', 'life', 'die', 'wife', 'weep', 'behind', 'keep', 'mind', 'spend', 'it', 'end', 'it', 'sits', 'commits'], ['any', 'unprovident', 'many', 'evident', 'hate', 'conspire', 'ruinate', 'desire', 'mind', 'love', 'kind', 'prove', 'me', 'thee'], ['growest', 'departest', 'bestowest', 'convertest', 'increase', 'decay', 'cease', 'away', 'store', 'perish', 'more', 'cherish', 'thereby', 'die'], ['time', 'night', 'prime', 'white', 'leaves', 'herd', 'sheaves', 'beard', 'make', 'go', 'forsake', 'grow', 'defence', 'hence'], ['are', 'live', 'prepare', 'give', 'lease', 'were', 'decease', 'bear', 'decay', 'uphold', 'day', 'cold', 'know', 'so'], ['pluck', 'astronomy', 'luck', 'quality', 'tell', 'wind', 'well', 'find', 'derive', 'art', 'thrive', 'convert', 'prognosticate', 'date'], ['grows', 'moment', 'shows', 'comment', 'increase', 'sky', 'decrease', 'memory', 'stay', 'sight', 'Decay', 'night', 'you', 'new'], ['way', 'Time', 'decay', 'rhyme', 'hours', 'unset', 'flowers', 'counterfeit', 'repair', 'pen', 'fair', 'men', 'still', 'skill'], ['come', 'deserts', 'tomb', 'parts', 'eyes', 'graces', 'lies', 'faces', 'age', 'tongue', 'rage', 'song', 'time', 'rhyme'], ['day', 'temperate', 'May', 'date', 'shines', "dimm'd", 'declines', "untrimm'd", 'fade', 'owest', 'shade', 'growest', 'see', 'thee'], ['paws', 'brood', 'jaws', 'blood', 'fleets', 'Time', 'sweets', 'crime', 'brow', 'pen', 'allow', 'men', 'wrong', 'young'], ['painted', 'passion', 'acquainted', 'fashion', 'rolling', 'gazeth', 'controlling', 'amazeth', 'created', 'a-doting', 'defeated', 'nothing', 'pleasure', 'treasure'], ['Muse', 'verse', 'use', 'rehearse', 'compare', 'gems', 'rare', 'hems', 'write', 'fair', 'bright', 'air', 'well', 'sell'], ['old', 'date', 'behold', 'expiate', 'thee', 'heart', 'me', 'art', 'wary', 'will', 'chary', 'ill', 'slain', 'again'], ['stage', 'part', 'rage', 'heart', 'say', 'rite', 'decay', 'might', 'eloquence', 'breast', 'recompense', "express'd", 'writ', 'wit'], ["stell'd", 'heart', 'held', 'art', 'skill', 'lies', 'still', 'eyes', 'done', 'me', 'sun', 'thee', 'art', 'heart'], ['stars', 'boast', 'bars', 'most', 'spread', 'eye', 'buried', 'die', 'fight', "foil'd", 'quite', "toil'd", 'beloved', 'removed'], ['vassalage', 'knit', 'embassage', 'wit', 'mine', 'it', 'thine', 'it', 'moving', 'aspect', 'loving', 'respect', 'thee', 'me'], ['bed', 'tired', 'head', 'expired', 'abide', 'thee', 'wide', 'see', 'sight', 'view', 'night', 'new', 'mind', 'find'], ['plight', 'rest', 'night', "oppress'd", 'reign', 'me', 'complain', 'thee', 'bright', 'heaven', 'night', 'even', 'longer', 'stronger'], ['eyes', 'state', 'cries', 'fate', 'hope', "possess'd", 'scope', 'least', 'despising', 'state', 'arising', 'gate', 'brings', 'kings'], ['thought', 'past', 'sought', 'waste', 'flow', 'night', 'woe', 'sight', 'foregone', "o'er", 'moan', 'before', 'friend', 'end'], ['hearts', 'dead', 'parts', 'buried', 'tear', 'eye', 'appear', 'lie', 'live', 'gone', 'give', 'alone', 'thee', 'me'], ['day', 'cover', 're-survey', 'lover', 'time', 'pen', 'rhyme', 'men', 'thought', 'age', 'brought', 'equipage', 'prove', 'love.'], ['seen', 'eye', 'green', 'alchemy', 'ride', 'face', 'hide', 'disgrace', 'shine', 'brow', 'mine', 'now', 'disdaineth', 'staineth'], ['day', 'cloak', 'way', 'smoke', 'break', 'face', 'speak', 'disgrace', 'grief', 'loss', 'relief', 'cross', 'sheds', 'deeds'], ['done', 'mud', 'sun', 'bud', 'this', 'compare', 'amiss', 'are', 'sense', 'advocate', 'commence', 'hate', 'be', 'me'], ['twain', 'one', 'remain', 'alone', 'respect', 'spite', 'effect', 'delight', 'thee', 'shame', 'me', 'name', 'sort', 'report'], ['delight', 'youth', 'spite', 'truth', 'wit', 'more', 'sit', 'store', 'despised', 'give', 'sufficed', 'live', 'thee', 'me'], ['invent', 'verse', 'excellent', 'rehearse', 'me', 'sight', 'thee', 'light', 'worth', 'invocate', 'forth', 'date', 'days', 'praise'], ['sing', 'me', 'bring', 'thee', 'live', 'one', 'give', 'alone', 'prove', 'leave', 'love', 'deceive', 'twain', 'remain'], ['all', 'before', 'call', 'more', 'receivest', 'usest', 'deceivest', 'refusest', 'thief', 'poverty', 'grief', 'injury', 'shows', 'foes'], ['commits', 'heart', 'befits', 'art', 'won', 'assailed', 'son', 'prevailed', 'forbear', 'youth', 'there', 'truth', 'thee', 'me'], ['grief', 'dearly', 'chief', 'nearly', 'ye', 'her', 'me', 'her', 'gain', 'loss', 'twain', 'cross', 'one', 'alone'], ['see', 'unrespected', 'thee', 'directed', 'bright', 'show', 'light', 'so', 'made', 'day', 'shade', 'stay', 'thee', 'me'], ['thought', 'way', 'brought', 'stay', 'stand', 'thee', 'land', 'be', 'thought', 'gone', 'wrought', 'moan', 'slow', 'woe'], ['fire', 'abide', 'desire', 'slide', 'gone', 'thee', 'alone', 'melancholy', 'recured', 'thee', 'assured', 'me', 'glad', 'sad'], ['war', 'sight', 'bar', 'right', 'lie', 'eyes', 'deny', 'lies', 'impanneled', 'heart', 'determined', 'part', 'part', 'heart'], ['took', 'other', 'look', 'smother', 'feast', 'heart', 'guest', 'part', 'love', 'me', 'move', 'thee', 'sight', 'delight'], ['way', 'thrust', 'stay', 'trust', 'are', 'grief', 'care', 'thief', 'chest', 'art', 'breast', 'part', 'fear', 'dear'], ['come', 'defects', 'sum', 'respects', 'pass', 'eye', 'was', 'gravity', 'here', 'desert', 'uprear', 'part', 'laws', 'cause'], ['way', 'end', 'say', 'friend', 'woe', 'me', 'know', 'thee', 'on', 'hide', 'groan', 'side', 'mind', 'behind'], ['offence', 'speed', 'thence', 'need', 'find', 'slow', 'wind', 'know', 'pace', 'made', 'race', 'jade', 'wilful-slow', 'go'], ['key', 'treasure', 'survey', 'pleasure', 'rare', 'set', 'are', 'carcanet', 'chest', 'hide', 'blest', 'pride', 'scope', 'hope'], ['made', 'tend', 'shade', 'lend', 'counterfeit', 'you', 'set', 'new', 'year', 'show', 'appear', 'know', 'part', 'heart'], ['seem', 'give', 'deem', 'live', 'dye', 'roses', 'wantonly', 'discloses', 'show', 'fade', 'so', 'made', 'youth', 'truth'], ['monuments', 'rhyme', 'contents', 'time', 'overturn', 'masonry', 'burn', 'memory', 'enmity', 'room', 'posterity', 'doom', 'arise', 'eyes'], ['said', 'appetite', "allay'd", 'might', 'fill', 'fullness', 'kill', 'dullness', 'be', 'new', 'see', 'view', 'care', 'rare'], ['tend', 'desire', 'spend', 'require', 'hour', 'you', 'sour', 'adieu', 'thought', 'suppose', 'nought', 'those', 'will', 'ill'], ['slave', 'pleasure', 'crave', 'leisure', 'beck', 'liberty', 'cheque', 'injury', 'strong', 'time', 'belong', 'crime', 'hell', 'well'], ['is', 'beguiled', 'amiss', 'child', 'look', 'sun', 'book', 'done', 'say', 'frame', 'they', 'same', 'days', 'praise'], ['shore', 'end', 'before', 'contend', 'light', "crown'd", 'fight', 'confound', 'youth', 'brow', 'truth', 'mow', 'stand', 'hand'], ['open', 'night', 'broken', 'sight', 'thee', 'pry', 'me', 'jealousy', 'great', 'awake', 'defeat', 'sake', 'elsewhere', 'near'], ['eye', 'part', 'remedy', 'heart', 'mine', 'account', 'define', 'surmount', 'indeed', 'antiquity', 'read', 'iniquity', 'praise', 'days'], ['now', "o'er-worn", 'brow', 'morn', 'night', 'king', 'sight', 'spring', 'fortify', 'knife', 'memory', 'life', 'seen', 'green'], ['defaced', 'age', 'down-razed', 'rage', 'gain', 'shore', 'main', 'store', 'state', 'decay', 'ruminate', 'away', 'choose', 'lose'], ['sea', 'power', 'plea', 'flower', 'out', 'days', 'stout', 'decays', 'alack', 'hid', 'back', 'forbid', 'might', 'bright'], ['cry', 'born', 'jollity', 'forsworn', 'misplaced', 'strumpeted', 'disgraced', 'disabled', 'authority', 'skill', 'simplicity', 'ill', 'gone', 'alone'], ['live', 'impiety', 'achieve', 'society', 'cheek', 'hue', 'seek', 'true', 'is', 'veins', 'his', 'gains', 'had', 'bad'], ['outworn', 'now', 'born', 'brow', 'dead', 'away', 'head', 'gay', 'seen', 'true', 'green', 'new', 'store', 'yore'], ['view', 'mend', 'due', 'commend', "crown'd", 'own', 'confound', 'shown', 'mind', 'deeds', 'kind', 'weeds', 'show', 'grow'], ['defect', 'fair', 'suspect', 'air', 'approve', 'time', 'love', 'prime', 'days', 'charged', 'praise', 'enlarged', 'show', 'owe'], ['dead', 'bell', 'fled', 'dwell', 'not', 'so', 'forgot', 'woe', 'verse', 'clay', 'rehearse', 'decay', 'moan', 'gone'], ['recite', 'love', 'quite', 'prove', 'lie', 'desert', 'deceased', 'impart', 'this', 'untrue', 'is', 'you', 'forth', 'worth'], ['behold', 'hang', 'cold', 'sang', 'day', 'west', 'away', 'rest', 'fire', 'lie', 'expire', 'by', 'strong', 'long'], ['arrest', 'away', 'interest', 'stay', 'review', 'thee', 'due', 'me', 'life', 'dead', 'knife', 'remembered', 'contains', 'remains'], ['life', 'ground', 'strife', 'found', 'anon', 'treasure', 'alone', 'pleasure', 'sight', 'look', 'delight', 'took', 'day', 'away'], ['pride', 'change', 'aside', 'strange', 'same', 'weed', 'name', 'proceed', 'you', 'argument', 'new', 'spent', 'old', 'told'], ['wear', 'waste', 'bear', 'taste', 'show', 'memory', 'know', 'eternity', 'contain', 'find', 'brain', 'mind', 'look', 'book'], ['Muse', 'verse', 'use', 'disperse', 'sing', 'fly', 'wing', 'majesty', 'compile', 'thee', 'style', 'be', 'advance', 'ignorance'], ['aid', 'grace', "decay'd", 'place', 'argument', 'pen', 'invent', 'again', 'word', 'give', 'afford', 'live', 'say', 'pay'], ['write', 'name', 'might', 'fame', 'is', 'bear', 'his', 'appear', 'afloat', 'ride', 'boat', 'pride', 'away', 'decay'], ['make', 'rotten', 'take', 'forgotten', 'have', 'die', 'grave', 'lie', 'verse', "o'er-read", 'rehearse', 'dead', 'pen', 'men'], ['Muse', "o'erlook", 'use', 'book', 'hue', 'praise', 'anew', 'days', 'devised', 'lend', 'sympathized', 'friend', 'used', 'abused'], ['need', 'set', 'exceed', 'debt', 'report', 'show', 'short', 'grow', 'impute', 'dumb', 'mute', 'tomb', 'eyes', 'devise'], ['more', 'you', 'store', 'grew', 'dwell', 'glory', 'tell', 'story', 'writ', 'clear', 'wit', 'where', 'curse', 'worse'], ['still', 'compiled', 'quill', 'filed', 'words', "'Amen", 'affords', 'pen', 'true', 'more', 'you', 'before', 'respect', 'effect'], ['verse', 'you', 'inhearse', 'grew', 'write', 'dead', 'night', 'astonished', 'ghost', 'intelligence', 'boast', 'thence', 'line', 'mine'], ['possessing', 'estimate', 'releasing', 'determinate', 'granting', 'deserving', 'wanting', 'swerving', 'knowing', 'mistaking', 'growing', 'making', 'flatter', 'matter'], ['light', 'scorn', 'fight', 'forsworn', 'acquainted', 'story', 'attainted', 'glory', 'too', 'thee', 'do', 'me', 'belong', 'wrong'], ['fault', 'offence', 'halt', 'defence', 'ill', 'change', 'will', 'strange', 'tongue', 'dwell', 'wrong', 'tell', 'debate', 'hate'], ['now', 'cross', 'bow', 'after-loss', 'sorrow', 'woe', 'morrow', 'overthrow', 'last', 'spite', 'taste', 'might', 'woe', 'so'], ['skill', 'force', 'ill', 'horse', 'pleasure', 'rest', 'measure', 'best', 'me', 'cost', 'be', 'boast', 'take', 'make'], ['away', 'mine', 'stay', 'thine', 'wrongs', 'end', 'belongs', 'depend', 'mind', 'lie', 'find', 'die', 'blot', 'not'], ['true', 'face', 'new', 'place', 'eye', 'change', 'history', 'strange', 'decree', 'dwell', 'be', 'tell', 'grow', 'show'], ['none', 'show', 'stone', 'slow', 'graces', 'expense', 'faces', 'excellence', 'sweet', 'die', 'meet', 'dignity', 'deeds', 'weeds'], ['shame', 'rose', 'name', 'enclose', 'days', 'sport', 'praise', 'report', 'got', 'thee', 'blot', 'see', 'privilege', 'edge'], ['wantonness', 'sport', 'less', 'resort', 'queen', "esteem'd", 'seen', "deem'd", 'betray', 'translate', 'away', 'state', 'sort', 'report'], ['been', 'year', 'seen', 'where', 'time', 'increase', 'prime', 'decease', 'me', 'fruit', 'thee', 'mute', 'cheer', 'near'], ['spring', 'trim', 'thing', 'him', 'smell', 'hue', 'tell', 'grew', 'white', 'rose', 'delight', 'those', 'away', 'play'], ['chide', 'smells', 'pride', 'dwells', 'dyed', 'hand', 'hair', 'stand', 'despair', 'both', 'breath', 'growth', 'death', 'see', '1'], ['long', 'might', 'song', 'light', 'redeem', 'spent', 'esteem', 'argument', 'survey', 'there', 'decay', 'where', 'life', 'knife'], ['amends', 'dyed', 'depends', 'dignified', 'say', "fix'd", 'lay', "intermix'd", 'dumb', 'thee', 'tomb', 'be', 'how', 'now'], ['seeming', 'appear', 'esteeming', 'where', 'spring', 'lays', 'sing', 'days', 'now', 'night', 'bough', 'delight', 'tongue', 'song'], ['forth', 'pride', 'worth', 'beside', 'write', 'face', 'quite', 'disgrace', 'mend', 'well', 'tend', 'tell', 'sit', 'it'], ['old', 'eyed', 'cold', 'pride', "turn'd", 'seen', "burn'd", 'green', 'dial-hand', 'perceived', 'stand', 'deceived', 'unbred', 'dead'], ['idolatry', 'show', 'be', 'so', 'kind', 'excellence', 'confined', 'difference', 'argument', 'words', 'spent', 'affords', 'alone', 'one'], ['time', 'wights', 'rhyme', 'knights', 'best', 'brow', "express'd", 'now', 'prophecies', 'prefiguring', 'eyes', 'sing', 'days', 'praise'], ['soul', 'come', 'control', 'doom', 'endured', 'presage', 'assured', 'age', 'time', 'subscribes', 'rhyme', 'tribes', 'monument', 'spent'], ['character', 'spirit', 'register', 'merit', 'divine', 'same', 'thine', 'name', 'case', 'age', 'place', 'page', 'bred', 'dead'], ['heart', 'qualify', 'depart', 'lie', 'ranged', 'again', 'exchanged', 'stain', "reign'd", 'blood', "stain'd", 'good', 'call', 'all'], ['there', 'view', 'dear', 'new', 'truth', 'above', 'youth', 'love', 'end', 'grind', 'friend', 'confined', 'best', 'breast'], ['chide', 'deeds', 'provide', 'breeds', 'brand', 'subdued', 'hand', "renew'd", 'drink', 'infection', 'think', 'correction', 'ye', 'me'], ['fill', 'brow', 'ill', 'allow', 'strive', 'tongue', 'alive', 'wrong', 'care', 'sense', 'are', 'dispense', 'bred', 'dead'], ['mind', 'about', 'blind', 'out', 'heart', 'latch', 'part', 'catch', 'sight', 'creature', 'night', 'feature', 'you', 'untrue'], ['you', 'flattery', 'true', 'alchemy', 'indigest', 'resemble', 'best', 'assemble', 'seeing', 'up', "'greeing", 'cup', 'sin', 'begin'], ['lie', 'dearer', 'why', 'clearer', 'accidents', 'kings', 'intents', 'things', 'tyranny', 'best', 'incertainty', 'rest', 'so', 'grow'], ['minds', 'love', 'finds', 'remove', 'mark', 'shaken', 'bark', 'taken', 'cheeks', 'come', 'weeks', 'doom', 'proved', 'loved'], ['all', 'repay', 'call', 'day', 'minds', 'right', 'winds', 'sight', 'down', 'accumulate', 'frown', 'hate', 'prove', 'love'], ['keen', 'urge', 'unseen', 'purge', 'sweetness', 'feeding', 'meetness', 'needing', 'anticipate', 'assured', 'state', 'cured', 'true', 'you'], ['tears', 'within', 'fears', 'win', 'committed', 'never', 'fitted', 'fever', 'true', 'better', 'anew', 'greater', 'content', 'spent'], ['now', 'feel', 'bow', 'steel', 'shaken', 'time', 'taken', 'crime', "remember'd", 'hits', "tender'd", 'fits', 'fee', 'me'], ["esteem'd", 'being', "deem'd", 'seeing', 'eyes', 'blood', 'spies', 'good', 'level', 'own', 'bevel', 'shown', 'maintain', 'reign'], ['brain', 'memory', 'remain', 'eternity', 'heart', 'subsist', 'part', "miss'd", 'hold', 'score', 'bold', 'more', 'thee', 'me'], ['change', 'might', 'strange', 'sight', 'admire', 'old', 'desire', 'told', 'defy', 'past', 'lie', 'haste', 'be', 'thee'], ['state', "unfather'd", 'hate', "gather'd", 'accident', 'falls', 'discontent', 'calls', 'heretic', 'hours', 'politic', 'showers', 'time', 'crime'], ['canopy', 'honouring', 'eternity', 'ruining', 'favour', 'rent', 'savour', 'spent', 'heart', 'free', 'art', 'thee', 'soul', 'control'], ['power', 'hour', "show'st", "grow'st", 'wrack', 'back', 'skill', 'kill', 'pleasure', 'treasure', 'be', 'thee'], ['fair', 'name', 'heir', 'shame', 'power', 'face', 'bower', 'disgrace', 'black', 'seem', 'lack', 'esteem', 'woe', 'so'], ["play'st", 'sounds', "sway'st", 'confounds', 'leap', 'hand', 'reap', 'stand', 'state', 'chips', 'gait', 'lips', 'this', 'kiss'], ['shame', 'lust', 'blame', 'trust', 'straight', 'had', 'bait', 'mad', 'so', 'extreme', 'woe', 'dream', 'well', 'hell'], ['sun', 'red', 'dun', 'head', 'white', 'cheeks', 'delight', 'reeks', 'know', 'sound', 'go', 'ground', 'rare', 'compare'], ['art', 'cruel', 'heart', 'jewel', 'behold', 'groan', 'bold', 'alone', 'swear', 'face', 'bear', 'place', 'deeds', 'proceeds'], ['me', 'disdain', 'be', 'pain', 'heaven', 'east', 'even', 'west', 'face', 'heart', 'grace', 'part', 'black', 'lack'], ['groan', 'me', 'alone', 'be', 'taken', "engross'd", 'forsaken', "cross'd", 'ward', 'bail', 'guard', 'gaol', 'thee', 'me'], ['thine', 'will', 'mine', 'still', 'free', 'kind', 'me', 'bind', 'take', 'use', 'sake', 'abuse', 'me', 'free'], ["'Will", 'overplus', 'still', 'thus', 'spacious', 'thine', 'gracious', 'shine', 'still', 'store', "'Will", 'more', 'kill', "'Will."], ['near', "'Will", 'there', 'fulfil', 'love', 'one', 'prove', 'none', 'untold', 'be', 'hold', 'thee', 'still', "'Will."], ['eyes', 'see', 'lies', 'be', 'looks', 'ride', 'hooks', 'tied', 'plot', 'place', 'not', 'face', 'erred', "transferr'd"], ['truth', 'lies', 'youth', 'subtleties', 'young', 'best', 'tongue', "suppress'd", 'unjust', 'old', 'trust', 'told', 'me', 'be'], ['wrong', 'heart', 'tongue', 'art', 'sight', 'aside', 'might', 'bide', 'knows', 'enemies', 'foes', 'injuries', 'slain', 'pain'], ['press', 'disdain', 'express', 'pain', 'were', 'so', 'near', 'know', 'mad', 'thee', 'bad', 'be', 'belied', 'wide'], ['eyes', 'note', 'despise', 'dote', 'delighted', 'prone', 'invited', 'alone', 'can', 'thee', 'man', 'be', 'gain', 'pain'], ['hate', 'loving', 'state', 'reproving', 'thine', 'ornaments', 'mine', 'rents', 'those', 'thee', 'grows', 'be', 'hide', 'denied'], ['catch', 'away', 'dispatch', 'stay', 'chase', 'bent', 'face', 'discontent', 'thee', 'behind', 'me', 'kind', "'Will", 'still'], ['despair', 'still', 'fair', 'ill', 'evil', 'side', 'devil', 'pride', 'fiend', 'tell', 'friend', 'hell', 'doubt', 'out'], ['make', 'hate', 'sake', 'state', 'come', 'sweet', 'doom', 'greet', 'end', 'day', 'fiend', 'away', 'threw', 'you.'], ['earth', 'array', 'dearth', 'gay', 'lease', 'spend', 'excess', 'end', 'loss', 'store', 'dross', 'more', 'men', 'then'], ['still', 'disease', 'ill', 'please', 'love', 'kept', 'approve', 'except', 'care', 'unrest', 'are', "express'd", 'bright', 'night'], ['head', 'sight', 'fled', 'aright', 'dote', 'so', 'denote', "'No", 'true', 'tears', 'view', 'clears', 'blind', 'find'], ['not', 'partake', 'forgot', 'sake', 'friend', 'upon', 'spend', 'moan', 'respect', 'despise', 'defect', 'eyes', 'mind', 'blind'], ['might', 'sway', 'sight', 'day', 'ill', 'deeds', 'skill', 'exceeds', 'more', 'hate', 'abhor', 'state', 'me', 'thee'], ['is', 'love', 'amiss', 'prove', 'betray', 'treason', 'may', 'reason', 'thee', 'pride', 'be', 'side', 'call', 'fall'], ['forsworn', 'swearing', 'torn', 'bearing', 'thee', 'most', 'thee', 'lost', 'kindness', 'constancy', 'blindness', 'see', 'perjured', 'lie'], ['asleep', 'found', 'steep', 'ground', 'Love', 'endure', 'prove', 'cure', 'new-fired', 'breast', 'desired', 'guest', 'lies', 'eyes'], ['asleep', 'brand', 'keep', 'hand', 'fire', "warm'd", 'desire', "disarm'd", 'by', 'perpetual', 'remedy', 'thrall', 'prove', 'love']];
 
 //1032 distinct words, including 271 of the most common words in the english language
 
 //output: single integer
 function find_sonnet_index(word){
-    var indexes = []
-    for (dex in all_end_words){
-      end_words = all_end_words[dex]
-        for (dex2 in end_words){
-          item = end_words[dex2]
-            if (item == word){
-              indexes.push(all_end_words.indexOf(end_words))
-            }
-          }
-        }
-    return(indexes[(Math.floor(Math.random()*indexes.length))])
+  var indexes = []
+  for (dex in all_end_words){
+    end_words = all_end_words[dex]
+    for (dex2 in end_words){
+      item = end_words[dex2]
+      if (item == word){
+        indexes.push(all_end_words.indexOf(end_words))
+      }
+    }
+  }
+  return(indexes[(Math.floor(Math.random()*indexes.length))])
 }
 
 function rhymedline(word){
-    var index = find_sonnet_index(word)
-    if (typeof(index) == "undefined"){
-        return "No rhyming line found"
-      }
-    var sonnet = all_sonnets[index]
-    var end_words = []
-    sonnet.forEach(function(line){
-        var split = line.split([" "])
-          end_words.push(split[split.length - 1])
-      });
-    var matches = {}
-    var uplines = [0, 1, 4, 5, 8, 9]
-    var downlines = [2, 3, 6, 7, 10, 11]
+  var index = find_sonnet_index(word)
+  if (typeof(index) == "undefined"){
+    return "No rhyming line found"
+  }
+  var sonnet = all_sonnets[index]
+  var end_words = []
+  sonnet.forEach(function(line){
+    var split = line.split([" "])
+    end_words.push(split[split.length - 1])
+  });
+  var matches = {}
+  var uplines = [0, 1, 4, 5, 8, 9]
+  var downlines = [2, 3, 6, 7, 10, 11]
+  if (index == 125) { //125 (S 126) has different rhyme scheme
+    var uplines = [0, 2, 4, 6, 8, 10]
+    var downlines = [1, 3, 5, 7, 9, 11]
     uplines.forEach(function(x){
-        matches[end_words[x]] = sonnet[(x+2)]
-      });
+      matches[end_words[x]] = sonnet[(x+1)]
+    });
     downlines.forEach(function(x){
-        matches[end_words[x]] = sonnet[(x-2)]
-      });
+      matches[end_words[x]] = sonnet[(x-1)]
+    });
+  }
+  else {
+    uplines.forEach(function(x){
+      matches[end_words[x]] = sonnet[(x+2)]
+    });
+    downlines.forEach(function(x){
+      matches[end_words[x]] = sonnet[(x-2)]
+    });
     matches[end_words[12]] = sonnet[13]
     matches[end_words[13]] = sonnet[12]
-    if (word in matches){
-        return matches[word]
-      }
-    else{
-        return "No rhyming line found"
-      }
+  }
+  if (word in matches){
+    return matches[word]
+  }
+  else{
+    return "No rhyming line found"
+  }
 }
 
 function seven_couplets_rhymer(seeds){
@@ -2363,15 +2388,15 @@ function seven_couplets(){
   for(var i=0; i<7; i++){
     end_words_options = all_end_words[(Math.floor(Math.random()*all_end_words.length))]
     seeds.push(end_words_options[(Math.floor(Math.random()*end_words_options.length))]) //end word not random word from line
-}
-firstlines = seven_couplets_rhymer(seeds)
-var new_seeds = []
-firstlines.forEach(function(line){
+  }
+  firstlines = seven_couplets_rhymer(seeds)
+  var new_seeds = []
+  firstlines.forEach(function(line){
     var split = line.split([" "])
-      new_seeds.push(split[split.length - 1])
+    new_seeds.push(split[split.length - 1])
   });
-secondlines = seven_couplets_rhymer(new_seeds)
-return [firstlines, secondlines]
+  secondlines = seven_couplets_rhymer(new_seeds)
+  return [firstlines, secondlines]
 }//seven_couplets
 
 
@@ -2391,21 +2416,78 @@ function make_poem(){  //constructs poem as array of strings
   return poem
 }//make_poem
 
+function net_words(line) {
+  var net_line = Math.floor(Math.random()*3)
+  var ret = ""
+  if (net_line != 1) {
+    ret += "<span class=\"netno\">"
+    ret += line
+  }
+  else {
+    var net_list = line.split(" ")
+    var rand_word = Math.floor(Math.random() * net_list.length)
+    ret += "<span class=\"netno\">"
+    for (var i=0; i<net_list.length; i++) {
+      if (i == rand_word) {
+        ret += "<span class=\"netyes\">"
+        ret += net_list[i]
+        ret += " "
+        ret += "</span>"
+      }
+      else {
+        ret += net_list[i]
+        ret += " "
+      }
+    }
+  }
+  ret += "</span>"
+  return ret
+}
+
 var rhymeform = document.querySelector("#rhymeform");
-  rhymeform.addEventListener("submit", function(event) {
-    var word = rhymeform.elements[0].value;
-    var output = document.querySelector("#outputrhyme");
-    output.textContent = rhymedline(word);
-    event.preventDefault();
-  });
+rhymeform.addEventListener("submit", function(event) {
+  var word = rhymeform.elements[0].value;
+  var output = document.querySelector("#outputrhyme");
+  output.textContent = rhymedline(word);
+  event.preventDefault();
+});
+
 var poemform = document.querySelector("#poemform");
-  poemform.addEventListener("submit", function(event) {
-    var sonnet = make_poem();
-    var output = document.querySelector("#outputpoem");
-    output.textContent = "";
-    for(i=0; i<14; i++){
+poemform.addEventListener("submit", function(event) {
+  var sonnet = make_poem();
+  var output = document.querySelector("#outputpoem");
+  output.textContent = "";
+  for(i=0; i<14; i++){
     output.append(document.createElement("p").textContent = sonnet[i]);
     output.append(document.createElement("br"));
   }
-    event.preventDefault();
-    });
+  event.preventDefault();
+});
+
+var netform = document.querySelector("#netform");
+netform.addEventListener("submit", function(event) {
+  var num = netform.elements[0].value;
+  var output = document.querySelector("#outputnet");
+  output.textContent = "";
+  if (num > 0 && num < 155) {
+    var sonnet = all_sonnets[num - 1];
+    if (num-1 == 125) {
+      for(i=0; i<12; i++){
+        var p = document.createElement("p");
+        p.innerHTML = net_words(sonnet[i]);
+        output.append(p);
+      }
+    }
+    else {
+      for(i=0; i<14; i++){
+        var p = document.createElement("p");
+        p.innerHTML = net_words(sonnet[i]);
+        output.append(p);
+      }
+    }
+  }
+  else {
+    output.append(document.createElement("p").textContent = "Sonnets are numbered between 1 and 154");
+  }
+  event.preventDefault();
+});

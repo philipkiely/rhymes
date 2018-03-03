@@ -43,3 +43,12 @@ li.list-group-item:hover {
 .yellowish {
   background-color: #fdf6e3;
 }
+
+span.netno {
+  color: #808080;
+}
+
+span.netyes {
+  color: black !important;
+  font-weight: bold !important;
+}
